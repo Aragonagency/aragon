@@ -3,6 +3,7 @@
   "private": true,
   "version": "2.6.2",
   "scripts": {
+"dev": "npm run generate && concurrently \"npx faust@latest dev\" \"npm run watch-codegen\"",
     "dev": "npm run generate && concurrently \"faust dev\" \"npm run watch-codegen\"",
     "build": "faust build",
     "postbuild": "next-sitemap",
@@ -16,6 +17,7 @@
   "prettier": "@epic-web/config/prettier",
   "dependencies": {
     "@apollo/client": "^3.8.7",
+    "@faustjs/next": "^0.16.0",
     "@faustwp/blocks": "^4.0.0",
     "@faustwp/cli": "^3.0.2",
     "@faustwp/core": "^3.0.3",

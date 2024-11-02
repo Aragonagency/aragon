@@ -27,7 +27,7 @@ const Navigation: FC<Props> = ({
 	})
 
 	if (maxItemsToShow) {
-		menus = menus.slice(0, maxItemsToShow)
+		// menus = menus.slice(0, maxItemsToShow)
 	}
 
 	return (
